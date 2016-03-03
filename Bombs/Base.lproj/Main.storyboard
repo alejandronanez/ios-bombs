@@ -26,6 +26,9 @@
                                 <state key="normal" title="Hide red">
                                     <color key="titleColor" red="0.80784313725490198" green="0.082352941176470587" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="hideRedBomb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L1M-tU-fWa"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bomb Red" translatesAutoresizingMaskIntoConstraints="NO" id="0CA-zp-u9s">
                                 <rect key="frame" x="231" y="90" width="124" height="135"/>
@@ -36,11 +39,18 @@
                                 <state key="normal" title="Hide blue">
                                     <color key="titleColor" red="0.23529411764705882" green="0.4823529411764706" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="hideBlueBomb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CLT-i2-cgz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bombBlue" destination="whj-SH-Ey5" id="x7m-E1-Bhv"/>
+                        <outlet property="bombRed" destination="0CA-zp-u9s" id="foG-bM-UL3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
